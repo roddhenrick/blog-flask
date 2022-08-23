@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Posts list
+{% endblock %}
+
+{% block content %}
+    <h1>Posts</h1>
+
+    {% for post in posts %}
+        {% include 'posts/includes/card.html' %}
+    {% endfor %}
+
+{% endblock %}
+
+
